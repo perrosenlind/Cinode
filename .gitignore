@@ -1,0 +1,4 @@
+# Local Cinode secrets
+cinode_token.json
+credentials.txt
+__pycache__/
