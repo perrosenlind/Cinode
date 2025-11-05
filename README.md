@@ -13,7 +13,7 @@ This directory contains helper scripts that integrate with the Cinode API to ins
   - Ensure your Cinode profile (or the target user’s profile) contains the public Credly link in one of the
     social link fields (Homepage, Website, Blog, etc.) so the scripts can locate the badge feed.
     - Example configuration:
-      ![Cinode social link example](<Screenshot 2025-11-05 at 08.16.03.png>)
+      ![Cinode social link example](<Screenshot_Cinode_Settings.png>)
 
 ## Key Scripts
 
