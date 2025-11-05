@@ -2,3 +2,4 @@
 cinode_token.json
 credentials.txt
 __pycache__/
+*.csv

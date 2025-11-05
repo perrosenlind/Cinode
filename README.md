@@ -8,7 +8,12 @@ This directory contains helper scripts that integrate with the Cinode API to ins
 - Required Python packages:
   - `requests`
   - `rich` (optional but recommended for colorized console output)
-- `credentials.txt` in this directory with the expected Cinode API keys and company identifiers.
+  - `credentials.txt` in this directory with the expected Cinode API keys and company identifiers. Create
+    a Cinode API client in your tenant and copy its client ID/secret alongside user credentials.
+  - Ensure your Cinode profile (or the target user’s profile) contains the public Credly link in one of the
+    social link fields (Homepage, Website, Blog, etc.) so the scripts can locate the badge feed.
+    - Example configuration:
+      ![Cinode social link example](<Screenshot 2025-11-05 at 08.16.03.png>)
 
 ## Key Scripts
 
@@ -35,6 +40,7 @@ Interactive browser for a user’s trainings. Can dump details, group by type or
 ## Usage Notes
 
 1. Ensure `credentials.txt` contains `CINODE_COMPANY_ID` and the required API tokens.
+2. Add the user’s Credly URL to a Cinode social link field (e.g., Homepage) so badge discovery works.
 2. (Optional) Activate the project virtual environment: `source ../.venv/bin/activate`.
 3. Install dependencies: `pip install requests rich`.
 4. Run the desired script, e.g. `python update_cinode_from_credly.py --user "lastname" --add-missing`.
